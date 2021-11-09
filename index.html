@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exchange Rate Calculator</title>
+  </head>
+  <body>
+    <img id="siteLogo" src="logo.png" alt="Site Logo" />
+    <h1>Exchange Rate Calculator</h1>
+    <h3>Choose the currency and the amounts to get the exchange rates</h3>
+    <div id="exCurrency1">
+      <select id="currency1">
+        <option value="" class="country">USD</option>
+        <option value="" class="country">CAD</option>
+        <option value="" class="country">GBP</option>
+        <option value="" class="country">INR</option>
+      </select>
+      <select id="amount1">
+        <option value="" class="amount">1</option>
+        <option value="" class="amount">2</option>
+        <option value="" class="amount">3</option>
+        <option value="" class="amount">4</option>
+      </select>
+    </div>
+
+    <div id="exDisplay">
+      <button id="swap">Swap</button>
+      <span id="exRate">Current Exchange rate</span>
+    </div>
+
+    <div id="exCurrency2">
+      <select id="currency2">
+        <option value="" class="country">USD</option>
+        <option value="" class="country">CAD</option>
+        <option value="" class="country">GBP</option>
+        <option value="" class="country">INR</option>
+      </select>
+      <select id="amount2">
+        <option value="" class="amount">1</option>
+        <option value="" class="amount">2</option>
+        <option value="" class="amount">3</option>
+        <option value="" class="amount">4</option>
+      </select>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
