@@ -5,18 +5,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-text-color: darkseagreen;
+}
+
 h1 {
   font-family: "Azeret Mono", monospace;
-  color: darkseagreen;
+  color: rgb(59, 207, 56);
+  text-align: center;
 }
 
 body {
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
   font-family: "Mohave", sans-serif;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
 }
 
 h3 {
@@ -31,11 +39,21 @@ h3 {
 #currency1,
 #currency2 {
   margin-right: 100px;
+  font-size: 18px;
+  background: transparent;
+  border: 0;
 }
 
 #amount1,
 #amount2 {
   margin-left: 100px;
+  font-size: 18px;
+  background: transparent;
+  border: 0;
+}
+
+select:focus, input:focus, button:focus{
+  outline: 0;
 }
 
 #exCurrency1 {
@@ -46,11 +64,18 @@ h3 {
   padding-top: 20px;
 }
 
-#swap {
-    background-color: darkseagreen;
-    color: white;
-    margin-right: 100px;
-    border-color: darkseagreen;
-    border-radius: 5px;
-    font-size: 16px;
+#swapBtn {
+  background-color: darkseagreen;
+  color: white;
+  border-color: rgb(135, 175, 135);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 50px 20px 50px;
+  padding-right: 10px;
+}
+
+
+#exDisplay{
+  justify-content: space-between;
 }
