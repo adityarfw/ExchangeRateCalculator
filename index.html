@@ -61,7 +61,7 @@
         <option value="TRY">TRY</option>
         <option value="TWD">TWD</option>
         <option value="UAH">UAH</option>
-        <option value="USD" >USD</option>
+        <option value="USD">USD</option>
         <option value="UYU">UYU</option>
         <option value="VND">VND</option>
         <option value="ZAR">ZAR</option>
@@ -71,7 +71,7 @@
 
     <div id="exDisplay">
       <button id="swapBtn">Swap</button>
-      <span id="exRate">Text will go here</span>
+      <span id="exRate"></span>
     </div>
 
     <div id="exCurrency2">
@@ -82,7 +82,7 @@
         <option value="BGN">BGN</option>
         <option value="BRL">BRL</option>
         <option value="BSD">BSD</option>
-        <option value="CAD" >CAD</option>
+        <option value="CAD">CAD</option>
         <option value="CHF">CHF</option>
         <option value="CLP">CLP</option>
         <option value="CNY">CNY</option>
@@ -130,6 +130,22 @@
         <option value="ZAR">ZAR</option>
       </select>
       <input type="number" id="amount2" min="0" placeholder="0" />
+    </div>
+    <div id="historicalRate">
+      <h3>Enter a date to find historical rates</h3>
+      <div id="date">
+        <input
+          type="number"
+          id="year"
+          min="1990"
+          max="2020"
+          placeholder="Year"
+        />
+        <input type="number" id="month" min="1" max="12" placeholder="Month" />
+        <input type="number" id="day" min="1" max="31" placeholder="Day" />
+      </div>
+      <br />
+      <span id="histRate">Text will go here</span>
     </div>
     <script src="script.js"></script>
   </body>

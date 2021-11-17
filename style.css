@@ -28,6 +28,7 @@ body {
 }
 
 h3 {
+  text-align: center;
   color: darkslateblue;
 }
 
@@ -38,26 +39,29 @@ h3 {
 
 #currency1,
 #currency2 {
+  margin: 0 50px 0 -50px;
   font-size: 18px;
   background: transparent;
   border: 0;
-  position: relative;
 }
 
 #amount1,
 #amount2 {
+  width: 5em;
   font-size: 18px;
   background: transparent;
   border: 0;
-  position: fixed;
+  position: absolute;
 }
 
-select:focus, input:focus, button:focus{
+select:focus,
+input:focus,
+button:focus {
   outline: 0;
 }
 
 #swapBtn {
-  background-color: darkseagreen;
+  background-color: rgb(150, 163, 150);
   color: white;
   border-color: rgb(135, 175, 135);
   border-radius: 5px;
@@ -67,7 +71,26 @@ select:focus, input:focus, button:focus{
   padding-right: 20px 10px 20px 10px;
 }
 
-
-#exDisplay{
+#exDisplay {
   justify-content: space-between;
+}
+
+#date {
+  display: inline-block;
+  margin: 0px 50px 0px 50px;
+  font-size: 22px;
+  padding: 5px;
+}
+
+#year,
+#month,
+#day {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background-color: rgb(150, 163, 150);
+  border-color: transparent;
+  border-radius: 5px;
+  width: 5em;
+  height: 2em;
 }
