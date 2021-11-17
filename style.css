@@ -27,7 +27,7 @@ body {
   padding: 20px;
 }
 
-h3 {
+h3{
   text-align: center;
   color: darkslateblue;
 }
@@ -68,16 +68,29 @@ button:focus {
   font-size: 16px;
   cursor: pointer;
   margin: 20px 50px 20px 50px;
-  padding-right: 20px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
+  position: relative;
 }
 
-#exDisplay {
-  justify-content: space-between;
+#exRate {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#exRate:hover, #exR{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#historicalRate{
+  display: flex;
+  flex-direction: column;
 }
 
 #date {
   display: inline-block;
-  margin: 0px 50px 0px 50px;
+  justify-content: center;
+  text-align: center;
   font-size: 22px;
   padding: 5px;
 }
@@ -85,7 +98,6 @@ button:focus {
 #year,
 #month,
 #day {
-  padding: 5px;
   text-align: center;
   color: white;
   background-color: rgb(150, 163, 150);
@@ -94,3 +106,23 @@ button:focus {
   width: 5em;
   height: 2em;
 }
+
+::placeholder { 
+  color: white;
+}
+
+#lookUpDate{
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: rgb(253, 173, 10);
+  background-color: rgb(254, 228, 136);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+#histRate{
+  color: darkslateblue;
+}
+
