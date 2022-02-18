@@ -15,3 +15,5 @@ Swap button                                           Display Exchange rate (all
 drop down option to pick currency                     drop down to select Amount
 
 
+
+https://aditya-exchange-calculator.netlify.app/
